@@ -1,9 +1,3 @@
-# class FeatureContribution:
-#     def __init__(self,feature_indicator):
-#         self.feature_indicator=feature_indicator
-#
-#     def feature_contribution(self):
-#         if
 from sklearn.ensemble import RandomForestClassifier, ExtraTreesClassifier, RandomForestRegressor, ExtraTreesRegressor
 from sklearn.tree import DecisionTreeRegressor, DecisionTreeClassifier, _tree
 import numpy as np
@@ -148,7 +142,6 @@ def get_leaves_contributions(model, X_train, feature_indicator=None, last_layer_
 
     leaves_contributions = {}
 
-    # record_file = open('../record/old_new_contrib_depth6.csv', 'a', newline='')
     record_file = None
 
     root_node = tree_node(node_id=0, data_idx=np.arange(len(X_train)), contribs=np.zeros(line_shape))
@@ -196,8 +189,6 @@ def get_val_contributions(model, leaves_contributions, X_val):
 
 def _iterative_mean(iter, current_mean, x):
     """
-    Iteratively calculates mean using
-    http://www.heikohoffmann.de/htmlthesis/node134.html
     :param iter: non-negative integer, iteration
     :param current_mean: numpy array, current value of mean
     :param x: numpy array, new value to be added to mean

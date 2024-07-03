@@ -18,7 +18,7 @@ class gcForest:
         self.compute_FI = compute_FI # whether to compute feature importance
 
     def train_and_predict(self, train_data, train_label, test_data, test_label):
-        # basis information of dataset
+        # basic information of dataset
         num_samples, num_features = train_data.shape
 
         # basis process
