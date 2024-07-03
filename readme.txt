@@ -1,3 +1,5 @@
+This is the code for the paper "Interpreting Deep Forest through Feature Contribution and MDI Feature Importance".
+
 1. Feature Contribution (A Regression Example):
 example/example_bikesharingcontribution.py generates a '.csv' file (under the 'record' folder) listing each sample's feature and the corresponding feature contribution. 
 
